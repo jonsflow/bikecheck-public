@@ -116,6 +116,52 @@
             background: rgba(255, 255, 255, 0.2);
         }
         
+        .media-section {
+            margin: 4rem 0;
+            text-align: center;
+        }
+
+        .media-section h2 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .media-section .subtitle {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 2.5rem;
+            font-size: 1rem;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .media-placeholder {
+            background: rgba(255, 255, 255, 0.04);
+            border: 2px dashed rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            padding: 3rem 1.5rem;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.9rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .media-placeholder .media-icon {
+            font-size: 2.5rem;
+            opacity: 0.5;
+        }
+
+        .media-placeholder .media-label {
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
         .footer {
             text-align: center;
             padding: 2rem 0;
@@ -142,38 +188,53 @@
     <div class="container">
         <div class="hero">
             <h1>BikeCheck</h1>
-            <p>Smart bike maintenance tracking with Strava integration</p>
+            <p>The smartest way to keep your bike running at its best</p>
         </div>
         
         <div class="features">
             <div class="feature-card">
                 <h3>🚴‍♂️ Strava Integration</h3>
-                <p>Automatically sync your bikes and activities from Strava. Track ride time and mileage across all your bikes seamlessly.</p>
+                <p>Connect your Strava account and BikeCheck automatically imports your bikes and syncs your recent rides. Your actual moving time drives every maintenance calculation — no guesswork.</p>
             </div>
-            
+
             <div class="feature-card">
                 <h3>⏰ Service Intervals</h3>
-                <p>Set custom service intervals for bike components. Get notifications when maintenance is due based on actual ride time.</p>
+                <p>Set maintenance schedules for any component — chain, fork, brake pads, rear shock, and more. Choose from 17 pre-built part templates with sensible defaults, or dial in your own intervals.</p>
             </div>
-            
+
             <div class="feature-card">
-                <h3>📱 Cross-Platform</h3>
-                <p>Available on both iOS and Android with native apps designed for each platform's best user experience.</p>
+                <h3>🔍 Smart Bike Detection</h3>
+                <p>BikeCheck identifies your bike type from a database of 220+ models and automatically suggests the right service intervals for how you ride — whether it's a cross-country hardtail or a full-suspension enduro rig.</p>
             </div>
-            
+
+            <div class="feature-card">
+                <h3>🚦 Bike Health at a Glance</h3>
+                <p>Every bike shows a live status — Good, Needs Service, or Overdue — based on the health of its components. You can also manually flag any part as needing service right now, bypassing the timer entirely.</p>
+            </div>
+
             <div class="feature-card">
                 <h3>🔔 Smart Notifications</h3>
-                <p>Receive timely reminders for chain lubrication, brake pad replacement, fork service, and more based on your riding patterns.</p>
+                <p>Get reminded when maintenance is due without being spammed. BikeCheck sends at most one notification per component per week, so you only hear from it when it matters.</p>
             </div>
-            
+
             <div class="feature-card">
                 <h3>📊 Activity Tracking</h3>
-                <p>View your recent rides, track mileage per bike, and monitor component usage to optimize your maintenance schedule.</p>
+                <p>See your recent rides, per-bike mileage, total hours in the saddle, and how that usage stacks up against each component's service schedule. Your riding stats live on your profile.</p>
             </div>
-            
+
             <div class="feature-card">
                 <h3>🛠️ Maintenance History</h3>
-                <p>Keep detailed records of all maintenance performed, with easy reset functionality when service is completed.</p>
+                <p>Every reset logs a service record with the date and an optional note. Share a full maintenance report for any bike — handy when selling, getting a tune-up, or just keeping records.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🤖 Shop Assistant</h3>
+                <p>Not sure when to service your fork or how to bleed your brakes? Ask the built-in AI bike mechanic. Powered entirely on-device by Apple Intelligence — your conversations never leave your phone. (iOS 26+)</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📱 Cross-Platform</h3>
+                <p>Native apps for both iOS and Android, each built for its platform. Your bikes, your service history, your maintenance schedule — wherever you ride.</p>
             </div>
         </div>
         
@@ -219,8 +280,35 @@
             </div>
         </div>
         
+        <div class="media-section">
+            <h2>See It in Action</h2>
+            <p class="subtitle">Screenshots and video demos coming soon</p>
+            <div class="media-grid">
+                <div class="media-placeholder">
+                    <span class="media-icon">📱</span>
+                    <span class="media-label">Home Screen</span>
+                    <span>Bike health overview</span>
+                </div>
+                <div class="media-placeholder">
+                    <span class="media-icon">⏱️</span>
+                    <span class="media-label">Service Intervals</span>
+                    <span>Track component wear</span>
+                </div>
+                <div class="media-placeholder">
+                    <span class="media-icon">🤖</span>
+                    <span class="media-label">Shop Assistant</span>
+                    <span>AI mechanic in action</span>
+                </div>
+                <div class="media-placeholder">
+                    <span class="media-icon">▶️</span>
+                    <span class="media-label">App Demo</span>
+                    <span>Full walkthrough video</span>
+                </div>
+            </div>
+        </div>
+
         <div class="footer">
-            <p>&copy; 2024 BikeCheck. Keep your bike running smoothly.</p>
+            <p>&copy; 2026 BikeCheck. Keep your bike running smoothly.</p>
             <p style="margin-top: 0.5rem; font-size: 0.9rem;">
                 <a href="privacy.html" style="color: rgba(255, 255, 255, 0.8);">Privacy Policy</a> | 
                 <a href="support.html" style="color: rgba(255, 255, 255, 0.8);">Support</a>

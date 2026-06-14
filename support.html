@@ -126,7 +126,7 @@
             
             <div class="faq-item">
                 <h3>Why aren't all my bikes showing up?</h3>
-                <p>BikeCheck only shows bikes that have been used in recent activities. If you have a bike that hasn't been ridden recently, it won't appear in the app. Take a short ride and sync your activities to add it.</p>
+                <p>BikeCheck pulls your gear list directly from your Strava profile, so any bike added to Strava should appear. If a bike is missing, make sure it's added to your Strava gear and try signing out and back in to refresh your data.</p>
             </div>
             
             <div class="faq-item">
@@ -146,12 +146,32 @@
             
             <div class="faq-item">
                 <h3>Why am I not receiving notifications?</h3>
-                <p>Make sure you've enabled notifications in your device settings for BikeCheck. Also check that the "Notify" toggle is enabled for each service interval you want to be reminded about.</p>
+                <p>Make sure you've enabled notifications in your device settings for BikeCheck, and check that the "Notify" toggle is on for the service interval in question. Also note that BikeCheck intentionally limits reminders to once per component per week — if you received one recently, the next one will come after 7 days.</p>
             </div>
-            
+
+            <div class="faq-item">
+                <h3>What is "Mark as Needs Service"?</h3>
+                <p>This lets you immediately flag any component as overdue — regardless of where it is in its normal service cycle. It's useful when you notice something needs attention before the timer runs out (a worn chain, a spongy brake, a creaking bottom bracket). The flag is cleared when you reset the interval after servicing.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How does Smart Bike Detection work?</h3>
+                <p>When you add a bike, BikeCheck checks it against a database of 220+ models to identify your bike type — road, gravel, hardtail, full-suspension, etc. It then suggests the most relevant service intervals for that type, so you don't have to start from scratch. You can always adjust or add more intervals manually.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What is the Shop Assistant?</h3>
+                <p>The Shop Assistant is an AI-powered bike mechanic built into BikeCheck. You can ask it questions about servicing specific components — torque specs, bleed procedures, how often to lube your chain, when to replace brake pads, and more. It runs entirely on-device using Apple Intelligence, so nothing you type is sent to a server. Available on iOS 26 and later.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I share a bike maintenance report?</h3>
+                <p>Open the bike detail view, tap the overflow menu (···), and choose "Share Bike Report." BikeCheck generates a formatted summary of all service intervals, their current status, and reset history that you can share via Messages, Mail, AirDrop, or any other app.</p>
+            </div>
+
             <div class="faq-item">
                 <h3>Is my data secure?</h3>
-                <p>Yes! All your data is stored locally on your device. BikeCheck doesn't upload your personal information to external servers. See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+                <p>Your service intervals, maintenance history, and bike data are stored locally on your device. BikeCheck uses anonymous, privacy-preserving analytics (via TelemetryDeck) to understand how the app is used — no personally identifiable information is included. See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
             </div>
             
             <h2>Getting Started</h2>
@@ -182,7 +202,7 @@
             <div class="contact-card">
                 <h3>Still Need Help?</h3>
                 <p>Report issues or request features on our GitHub repository:</p>
-                <a href="https://github.com/jonathanalexander229/bikecheck/issues">github.com/jonathanalexander229/bikecheck/issues</a>
+                <a href="https://github.com/jonsflow/bikecheck/issues">github.com/jonsflow/bikecheck/issues</a>
             </div>
             
             <a href="index.html" class="back-link">← Back to BikeCheck</a>
