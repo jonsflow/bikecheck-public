@@ -92,7 +92,7 @@
         </div>
         
         <div class="content">
-            <p class="last-updated">Last updated: June 2026</p>
+            <p class="last-updated">Last updated: July 2026</p>
             
             <h2>Overview</h2>
             <p>BikeCheck is committed to protecting your privacy. This policy explains how we collect, use, and protect your personal information when you use our bike maintenance tracking application.</p>
@@ -103,12 +103,19 @@
                 <li><strong>Profile Information:</strong> Your Strava athlete ID, name, and profile picture</li>
                 <li><strong>Bike Information:</strong> Bike names and IDs from your Strava gear</li>
                 <li><strong>Activity Data:</strong> Limited activity data including ride duration, distance, and bike used (up to 200 recent activities)</li>
+                <li><strong>Route &amp; Segment Data:</strong> A ride's summary route line (used to draw the map on the ride detail screen) and its segment efforts — segment name, time, distance, and any PR/KOM achievements</li>
             </ul>
             
             <h3>App Usage Data</h3>
             <ul>
                 <li><strong>Service Intervals:</strong> Maintenance schedules and reminders you create</li>
+                <li><strong>Ride Conditions:</strong> An optional condition tag (dry, wet, muddy, sandy) you can add to a ride to adjust how quickly components wear</li>
                 <li><strong>Local Storage:</strong> All data is stored locally on your device</li>
+            </ul>
+
+            <h3>Location Data</h3>
+            <ul>
+                <li><strong>Nearby Bike Shops:</strong> When you use the "Nearby Bike Shops" feature, BikeCheck requests your location once to search for shops around you. Access is "while using the app" only, the location is not stored, and it is never sent to BikeCheck. The search itself is handled by Apple Maps.</li>
             </ul>
             
             <h2>How We Use Your Information</h2>
@@ -116,6 +123,8 @@
                 <li>Calculate service intervals based on actual ride time</li>
                 <li>Send maintenance notifications when components need attention</li>
                 <li>Sync your bikes and recent activities from Strava</li>
+                <li>Draw ride route maps and show your segment times and achievements</li>
+                <li>Find bike shops near you when you ask (using your device location)</li>
                 <li>Provide personalized maintenance tracking</li>
             </ul>
             
@@ -135,7 +144,7 @@
             <p>The Shop Assistant feature uses Apple Intelligence (on-device AI via Apple Foundation Models) to answer bike maintenance questions. All processing happens entirely on your device. Your questions and the assistant's responses are never transmitted to BikeCheck or any external server.</p>
 
             <h2>Data Sharing</h2>
-            <p>We do not sell or share your personal information. Your bikes, service intervals, and maintenance history are stored locally on your device. The only data that leaves your device is the anonymous analytics described above and the Strava OAuth tokens used to sync your ride data.</p>
+            <p>We do not sell or share your personal information. Your bikes, service intervals, and maintenance history are stored locally on your device. The only data that leaves your device is the anonymous analytics described above, the Strava OAuth requests used to sync your ride data, and — when you use Nearby Bike Shops — the "bike shop" search sent to Apple Maps to find nearby results.</p>
 
             <h2>Strava Integration</h2>
             <p>BikeCheck integrates with Strava using their official API. We only access:</p>
@@ -143,8 +152,9 @@
                 <li>Basic profile information (name, profile picture)</li>
                 <li>Your bikes/gear list</li>
                 <li>Recent ride activities (up to 200 rides of type "Ride" only)</li>
+                <li>Each ride's summary route line and segment efforts, used to draw the ride map and show your segment times and PR/KOM achievements</li>
             </ul>
-            <p>We do not access GPS data, heart rate, power data, or other detailed activity metrics.</p>
+            <p>We do not access heart rate, power data, or other detailed activity metrics beyond what is described above.</p>
             
             <h2>Your Rights</h2>
             <ul>
