@@ -1,0 +1,66 @@
+BikeCheck for Android — 1.0 Beta
+================================
+
+File:        BikeCheck-1.0-beta.apk
+Version:     1.0 (versionCode 1)
+Size:        7.9 MB
+SHA-256:     4b9236d4ec3b471f4b351e7291f5f02376a003878cf8267d6688ed2984159925
+Requires:    Android 7.0 (API 24) or newer
+Built:       August 2026
+
+
+Installing
+----------
+This is a sideload build, not a Play Store release. To install:
+
+1. Download BikeCheck-1.0-beta.apk to your phone.
+2. Open it. Android will ask permission to install apps from this
+   source — allow it for your browser or file manager.
+3. Tap Install.
+
+Because the app is not distributed through the Play Store, Android may
+show a Play Protect warning. Choosing "Install anyway" is expected for
+sideloaded apps.
+
+
+What's included
+---------------
+- Strava sign-in, with automatic sync of your bikes and recent activities
+- Service interval tracking per bike, with hours-based wear calculation
+- Smart bike detection and part presets — pick your bike, get sensible
+  starting intervals
+- 17 part templates across drivetrain, suspension, wheels, brakes and
+  cockpit
+- Mark as Needs Service, to flag a part as due regardless of ride hours
+- Service history with reset records and notes
+- Activity detail with route map and segment efforts (KOM/PR badges)
+- Nearby bike shops, with hand-off to your maps app for directions
+- Share a formatted service report for any bike
+- Local notifications for overdue service, throttled to once a week
+- Background sync of new Strava rides
+- Profile stats: bikes, miles, hours, activities, parts tracked,
+  services logged, overdue count
+
+
+Not on Android
+--------------
+Shop Assistant, the AI mechanic chat, is iOS-only. It runs on Apple's
+on-device Foundation Models and has no Android equivalent in this
+release.
+
+Cloud sync is likewise iOS-only in v1.
+
+
+Known limitations
+-----------------
+- Beta software. Please back up nothing you can't recreate — there is
+  no data export or restore yet.
+- Bike type detection matches on bike name only. If your Strava gear
+  has an unusual name, pick the parts manually.
+- Route maps use OpenStreetMap tiles and need a network connection.
+
+
+Feedback
+--------
+Issues and suggestions: https://github.com/jonsflow/bikecheck-public/issues
+Support: https://jonsflow.github.io/bikecheck-public/support.html
